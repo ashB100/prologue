@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/styles/position.css">
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: solid 10px red;
+            box-sizing: border-box;
+            float: left;
+        }
+        .inner-box {
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            border: solid 10px blue;
+            box-sizing: content-box;
+        }
+        .inner-box1 {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 50%;
+            bottom: 50%;
+            border: solid 10px purple;
+        }
+        .inner-box2 {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            left: 50%;
+            bottom: 50%;
+            border: solid 10px green;
+        }
+        .inner-box3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 50%;
+            top: 50%;
+            border: solid 10px yellow;
+        }
+        .inner-box4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            top: 50%;
+            border: solid 10px blue;
+        }
+
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1 style="position: static; border: solid">Static Positioning</h1>
+    <h2 style="position: static; border: solid">Block Elements</h2>
+    <p style="position: static; border: solid">A paragraph. If I were to write about something, what would I write about? Hmm.... No, nothing.
+    There's not much really. Everyday is pretty much the same. Try and wake up early but still wake up late. Plan to go for a
+    jog and do yoga but don't. Decide not to eat anything sweet, but eat a few biscuits. Aim to study quite a lot but only get a little
+    bit done.</p>
+    <strong style="border: solid"><font size="3">Inline Elements</font></strong>
+    Ok, lets see how statically positioned inline elements appear - this is anonymous text.
+    <tt style="position: static; border: solid">This is a teletype text.</tt>
+    <i style="position: static; border: solid">This is italicised text.</i>
+    <b style="position: static; border: solid">This is bold text.</b>
+    <cite style="position: static; border: solid">Cite creates a citation. MDN</cite>
+</div>
+<div id="div2">
+    <h1>Relative Positioning</h1>
+    <h2 style="position: relative; left:20px">Block Elements</h2>
+    <p style="position: relative; left:40px">A paragraph. If I were to write about something, what would I write about? Hmm.... No, nothing.
+        There's not much really. Everyday is pretty much the same. Try and wake up early but still wake up late. Plan to go for a
+        jog and do yoga, but don't. Decide not to eat anything sweet, but eat a few biscuits. Aim to study quite a lot but only get a little
+        bit done.</p>
+    <strong><font size="3">Inline Elements</font></strong>
+    <tt style="position:relative; top:-15px">Ok, lets see how statically positioned inline elements appear. This is a teletype text.</tt>
+    <i style="position:relative;top:15px">This is italicised text.</i>
+    <b style="position:relative;top:-15px">This is bold text.</b>
+    <cite style="position:relative;top:15px">Cite creates a citation. MDN</cite>
+</div>
+<div class="box">
+    <div class="inner-box"></div>
+</div>
+<div class="box">
+    <div class="inner-box1"></div>
+    <div class="inner-box2"></div>
+    <div class="inner-box3"></div>
+    <div class="inner-box4"></div>
+</div>
+</body>
+</html>
