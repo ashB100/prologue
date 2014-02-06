@@ -25,37 +25,37 @@
         <div class="wrapper">
             <div class="sidebar">
                 <div class="logo">
-                    <p><b>Jane Doe</b></p>
-                    <p>Hyperspace Engineer</p>
+                    <h1>Jane Doe</h1>
+                    <span>Hyperspace Engineer</span>
                 </div>
-                <nav>
+                <nav id="nav">
                     <ul class="menu">
                         <!-- put class name of anchor to make it faster-->
-                        <li><a class="menu-item fa-icon fa-home">Intro</a></li>
-                        <li><a class="menu-item fa-icon fa-th">Portfolio</a></li>
-                        <li><a class="menu-item fa-icon fa-user">About Me</a></li>
-                        <li><a class="menu-item fa-icon fa-envelope">Contact</a></li>
+                        <li><a href="#intro" class="menu-item fa-icon fa-home">Intro</a></li>
+                        <li><a href="#portfolio" class="menu-item fa-icon fa-th">Portfolio</a></li>
+                        <li><a href="#about" class="menu-item fa-icon fa-user">About Me</a></li>
+                        <li><a href="#contact" class="menu-item fa-icon fa-envelope">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="main-content">
-                <section>
-                    <div class="intro">
-                        <img src="imgs/layout_03.jpg" max-width="90%">
-                        <header></header>
+                <section id="intro" class="intro">
+                    <div class="container">
+                        <img src="imgs/pic01.jpg" class="image big">
+                        <header>
                         <h2>This is
                             <b>Prologue</b>.
-                            A free, fully responsive<br>
-                            site template by HTML5 UP.
+                            A <a class="dotted">free</a>, fully responsive<br>
+                            site template by <a class="dotted">HTML5 UP</a>.
                         </h2>
                         </header>
                         <p>Ligula scelerisquie justo sem accusmsan diam quis. Vitae natoque dictum etiam semper magnis
                             enim feugiat convallis convallis egestas rhoncus ridiculus in quis risus curabitur tempor. Orci
                             penatibus quisque laoreet condimentum sollicitudin accumsan elementum.</p>
-                        <button>Magna Aliquam</button>
+                        <a href="#portfolio" class="button">Magna Aliquam</a>
                     </div>
                 </section>
-                <section class="portfolio">
+                <section id="portfolio" class="portfolio">
                     <div class="container">
                         <header>
                             <h2>Portfolio</h2>
@@ -65,22 +65,83 @@
                             fermentum etiam vivamus eget. Nunc nibh morbi quis fusce hendrerit lacus ridiculus.
                         </p>
                         <div class="img-container">
-                            <div>
+                            <div class="pic-container">
+                                <article>
                                 <img src="imgs/pic02.jpg">
-                                <h3>Ipsum Feugiat</h3>
+                                <header><h3>Ipsum Feugiat</h3></header>
+                                </article>
+                                <article>
+                                    <img src="imgs/pic03.jpg">
+                                    <header><h3>Rhoncus Semper</h3></header>
+                                </article>
+                            </div>
+                            <div class="pic-container">
+                                <article>
+                                    <img src="imgs/pic04.jpg">
+                                    <header><h3>Magna Nullam</h3></header>
+                                </article>
+                                <article>
+                                    <img src="imgs/pic05.jpg">
+                                    <header><h3>Natoque Vitae</h3></header>
+                                </article>
+                             </div>
+                            <div class="pic-container">
+                                <article>
+                                    <img src="imgs/pic06.jpg">
+                                    <header><h3>Dolor Penatibus</h3></header>
+                                </article>
+                                <article>
+                                    <img src="imgs/pic07.jpg">
+                                    <header><h3>Orci Convallis</h3></header>
+                                </article>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="about">
+                <section id="about" class="about-me">
                     <div class="container">
-                        <header></header>
+                        <header>
+                            <h2>About Me</h2>
+                            <img src="imgs/pic08.jpg" class="image big">
+                        </header>
+                        <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus ultricies curae quis
+                            et rhoncus velit. Lobortis elementum aliquet nec vitae laoreet eget cubilia quam non etiam
+                            odio tincidunt montes. Elementum sem parturient nulla quam placerat viverra mauris non cum
+                            elit tempus ullamcorper dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis
+                            nec ornare iaculis.</p>
                     </div>
                 </section>
-                <section class="contact">
+
+                <section id="contact" class="contact-me">
                     <div class="container">
-                        <header></header>
-                    </div>
+                        <header><h2>Contact</h2></header>
+                        <p>Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+                            dolor. Libero rutrum ut lacinia donec curae mus. Eleifend id porttitor ac ultricies lobortis
+                            sem nunc orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+                        <form>
+                            <div class="contact-container">
+                                <div>
+                                    <input type="text" class="text1" name="name" placeholder="Name">
+
+                                </div>
+                                <div>
+                                    <input type="email" class="text2" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 2em">
+                                <div>
+                                    <textarea class="text1" name="message" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="button">Send Message</a>
+                            </div>
+
+                        </form>
+                        </div>
+
+
                 </section>
             </div>
         </div>
